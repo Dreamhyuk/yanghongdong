@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Yang Hong Dong
+        link(rel="stylesheet", href="/public/css/index.css")
+        link(rel="stylesheet", href="https://unpkg.com/mvp.css")
+    body
+        header
+            h1 Seowon E-Platform
+        main
+            div#welcome
+                form
+                    input(id="nickname" placeholder="nickname", required, type="text")
+                    input(id="roomName" placeholder="room name", required, type="text")
+                    button Enter Room
+                h4 Open Rooms:
+                ul
+            div#room.room
+                h3
+                div#myStream.streamWrapper
+                    div.streamList
+                        video#myCamera(autoplay,playsinline, muted, width="400", height="400")
+                        video#peerFace(autoplay,playsinline, width="400", height="400")
+                    div.streamBtnList
+                        button#mute Mute
+                        button#cameraBtn Turn Camera Off
+                    select#cameras
+                ul.messageList
+                form
+                    input(placeholder="message", required, type="text")
+                    button Send
+                    
+        script(src="/socket.io/socket.io.js") 
+        script(src="/public/js/app.js")
