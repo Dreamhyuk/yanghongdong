@@ -12,6 +12,7 @@ html(lang="en")
         link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
         link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
     body
+    section#page-top
     nav#mainNav.navbar.navbar-expand-lg.bg-secondary.text-uppercase.fixed-top
         .container
             a.navbar-brand(href='#page-top') Seowon University
@@ -36,7 +37,9 @@ html(lang="en")
         header
             h1 Seowon E-Platform
         main
-            div#welcome
+        section#about.page-section.bg-primary.text-white.mb-0
+            .container
+            div#welcome.welcome
                 form
                     input(id="nickname" placeholder="nickname", required, type="text")
                     input(id="roomName" placeholder="room name", required, type="text")
