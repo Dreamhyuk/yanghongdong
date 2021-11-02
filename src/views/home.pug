@@ -18,11 +18,11 @@ html(lang="en")
             a.navbar-brand(href='#page-top') Seowon University
             button.navbar-toggler.text-uppercase.font-weight-bold.bg-primary.text-white.rounded(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
              Menu
-            i.fas.fa-bars
+            i.fas.fa-barss
             #navbarResponsive.collapse.navbar-collapse
             ul.navbar-nav.ms-auto
-                li.nav-item.mx-0.mx-lg-1
-                a.nav-link.py-3.px-0.px-lg-3.rounded(href='#portfolio') LOGIN
+                li.nav-item.mx-0.mx-lg-1s
+                a.nav-link.py-3.px-0.px-lg-3.rounded(href="/facelog/public/index.html") LOGIN
                 li.nav-item.mx-0.mx-lg-1
                 a.nav-link.py-3.px-0.px-lg-3.rounded(href='#about') ENTER ROOM
     
@@ -41,7 +41,7 @@ html(lang="en")
             .container
             div#welcome.welcome
                 form
-                    input(id="nickname" placeholder="nickname", required, type="text")
+                    input(id="nickname" placeholder="name", required, type="text")
                     input(id="roomName" placeholder="room name", required, type="text")
                     button Enter Room
                 h4 Open Rooms:
@@ -63,4 +63,5 @@ html(lang="en")
                     
         script(src="/socket.io/socket.io.js") 
         script(src="/public/js/app.js")
+        script(src="login.html")
         
